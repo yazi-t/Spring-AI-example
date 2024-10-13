@@ -1,0 +1,11 @@
+<div class="main">
+    <div>
+        <mat-form-field class="img-input">
+            <mat-label>Image prompt</mat-label>
+            <input class="img-input" matInput placeholder="Type the prompt here" #inputPrompt (keydown.enter)="onGenerate()">
+        </mat-form-field>
+        <button mat-stroked-button color="primary" class="img-button" (click)="onGenerate()">Generate</button>
+    </div>
+
+    <img src="{{'data:image/jpg;base64,' + imageUrlToRender}}" alt="Result will be displayed here.">
+</div>

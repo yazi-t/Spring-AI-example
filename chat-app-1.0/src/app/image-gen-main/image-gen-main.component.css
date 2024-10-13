@@ -1,0 +1,12 @@
+.main {
+    padding: 20px;
+    width: 800px;
+}
+
+.img-input {
+    width: 600px;
+  }
+
+  .img-button {
+    float: right;
+  }

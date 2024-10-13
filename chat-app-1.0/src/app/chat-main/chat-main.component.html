@@ -1,0 +1,31 @@
+<div class="chat-header">
+    <H3>AI Chat</H3>
+    <h4>LLM based</h4>
+</div>
+
+<div class="chat-wrapper">
+    <div class="chat-main center">
+        <div class="chat-messages">
+            @for (message of messages; track message.id()) {
+            <div *ngIf="message.isLeft()" class="chat-bubble chat-bubble-left">
+                {{message.message()}}
+            </div>
+
+            <div *ngIf="message.isRight()" class="chat-bubble chat-bubble-right">
+                {{message.message()}}
+            </div>
+            }
+        </div>
+
+
+        <div class="chat-footer">
+            <mat-form-field class="chat-input">
+                <mat-label>Reply</mat-label>
+                <input class="chat-input" matInput placeholder="Type here" #chatMessage (keydown.enter)="onSend()">
+            </mat-form-field>
+            <button mat-stroked-button color="primary" class="chat-button" (click)="onSend()">Send</button>
+        </div>
+    </div>
+    <div>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+[+] Running 4/4
+ ✔ ollama 3 layers [⣿⣿⣿]      0B/0B      Pulled                                                                                                            77.3s
+   ✔ 3713021b0277 Pull complete                                                                                                                             7.2s
+   ✔ ef43d3c0c91f Pull complete                                                                                                                            15.8s
+   ✔ 713d00b50aac Pull complete                                                                                                                            66.4s
+[+] Building 0.0s (0/0)                                                                                                                           docker:default
+[+] Running 2/2
+ ✔ Network mydemo_default  Created                                                                                                                          0.1s
+ ✔ Container ollama        Created                                                                                                                          1.8s
+Attaching to ollama
+ollama  | Couldn't find '/root/.ollama/id_ed25519'. Generating new private key.
+ollama  | Your new public key is:
+ollama  |
+ollama  | ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE+IsAfhElJioWrAPIk/GFETYpyAkeEuOFHZu3A5Pf7M
+ollama  |
+ollama  | 2024/08/22 19:52:02 routes.go:1123: INFO server config env="map[CUDA_VISIBLE_DEVICES: GPU_DEVICE_ORDINAL: HIP_VISIBLE_DEVICES: HSA_OVERRIDE_GFX_VERSION
+: OLLAMA_DEBUG:false OLLAMA_FLASH_ATTENTION:false OLLAMA_HOST:http://0.0.0.0:11434 OLLAMA_INTEL_GPU:false OLLAMA_KEEP_ALIVE:5m0s OLLAMA_LLM_LIBRARY: OLLAMA_MAX_L
+OADED_MODELS:0 OLLAMA_MAX_QUEUE:512 OLLAMA_MODELS:/root/.ollama/models OLLAMA_NOHISTORY:false OLLAMA_NOPRUNE:false OLLAMA_NUM_PARALLEL:0 OLLAMA_ORIGINS:[http://l
+ocalhost https://localhost http://localhost:* https://localhost:* http://127.0.0.1 https://127.0.0.1 http://127.0.0.1:* https://127.0.0.1:* http://0.0.0.0 https://0.0.0.0 http://0.0.0.0:* https://0.0.0.0:* app://* file://* tauri://*] OLLAMA_RUNNERS_DIR: OLLAMA_SCHED_SPREAD:false OLLAMA_TMPDIR: ROCR_VISIBLE_DEVICES:]"
+ollama  | time=2024-08-22T19:52:02.991Z level=INFO source=images.go:782 msg="total blobs: 0"
+ollama  | time=2024-08-22T19:52:02.991Z level=INFO source=images.go:790 msg="total unused blobs removed: 0"
+ollama  | time=2024-08-22T19:52:02.991Z level=INFO source=routes.go:1170 msg="Listening on [::]:11434 (version 0.3.5)"
+ollama  | time=2024-08-22T19:52:02.993Z level=INFO source=payload.go:30 msg="extracting embedded files" dir=/tmp/ollama3604890440/runners
+ollama  | time=2024-08-22T19:52:08.826Z level=INFO source=payload.go:44 msg="Dynamic LLM libraries [cpu_avx cpu_avx2 cuda_v11 rocm_v60102 cpu]"
+ollama  | time=2024-08-22T19:52:08.826Z level=INFO source=gpu.go:204 msg="looking for compatible GPUs"
+ollama  | time=2024-08-22T19:52:08.828Z level=INFO source=gpu.go:350 msg="no compatible GPUs were discovered"
+ollama  | time=2024-08-22T19:52:08.828Z level=INFO source=types.go:105 msg="inference compute" id=0 library=cpu compute="" driver=0.0 name="" total="15.6 GiB" available="14.3 GiB"
